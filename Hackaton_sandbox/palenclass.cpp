@@ -3,9 +3,9 @@
 PalenClass::PalenClass()
 {
 
-    string PalenClass::getEpicString(void)
-    {
-        return "hej";
-    }
+    //string PalenClass::getEpicString(void)
+    //{
+    //    return "hej";
+    //}
 }
 
