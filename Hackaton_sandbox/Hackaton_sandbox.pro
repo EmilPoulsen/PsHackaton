@@ -14,9 +14,9 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    isaksclass.cpp
+    carlclass.cpp
 
 HEADERS  += mainwindow.h \
-    isaksclass.h
+    carlclass.h
 
 FORMS    += mainwindow.ui
