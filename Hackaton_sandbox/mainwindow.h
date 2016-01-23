@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "isaksclass.h"
 
 namespace Ui {
 class MainWindow;
