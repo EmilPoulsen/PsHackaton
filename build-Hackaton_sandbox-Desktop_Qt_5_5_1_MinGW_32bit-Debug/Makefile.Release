@@ -44,13 +44,17 @@ OBJECTS_DIR   = release
 ####### Files
 
 SOURCES       = ..\Hackaton_sandbox\main.cpp \
-		..\Hackaton_sandbox\mainwindow.cpp release\moc_mainwindow.cpp
+		..\Hackaton_sandbox\mainwindow.cpp \
+		..\Hackaton_sandbox\isaksclass.cpp release\moc_mainwindow.cpp
 OBJECTS       = release/main.o \
 		release/mainwindow.o \
+		release/isaksclass.o \
 		release/moc_mainwindow.o
 
-DIST          =  ..\Hackaton_sandbox\mainwindow.h ..\Hackaton_sandbox\main.cpp \
-		..\Hackaton_sandbox\mainwindow.cpp
+DIST          =  ..\Hackaton_sandbox\mainwindow.h \
+		..\Hackaton_sandbox\isaksclass.h ..\Hackaton_sandbox\main.cpp \
+		..\Hackaton_sandbox\mainwindow.cpp \
+		..\Hackaton_sandbox\isaksclass.cpp
 QMAKE_TARGET  = Hackaton_sandbox
 DESTDIR        = release\ #avoid trailing-slash linebreak
 TARGET         = Hackaton_sandbox.exe
@@ -89,7 +93,7 @@ dist:
 	$(ZIP) Hackaton_sandbox.zip $(SOURCES) $(DIST) ..\Hackaton_sandbox\Hackaton_sandbox.pro "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\spec_pre.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\qdevice.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\device_config.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\qconfig.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3dcollision.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3dcollision_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3dcore.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3dcore_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3dinput.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3dinput_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3dlogic.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3dlogic_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3dquick.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3dquick_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3dquickrenderer.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3dquickrenderer_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3drenderer.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_3drenderer_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_axbase.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_axbase_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_axcontainer.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_axcontainer_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_axserver.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_axserver_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_bluetooth.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_bluetooth_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_bootstrap_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_clucene_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_concurrent.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_concurrent_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_core.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_core_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_dbus.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_dbus_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_declarative.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_declarative_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_designer.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_designer_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_designercomponents_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_enginio.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_enginio_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_gui.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_gui_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_help.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_help_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_location.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_location_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_multimedia.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_multimedia_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_multimediawidgets.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_multimediawidgets_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_network.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_network_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_nfc.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_nfc_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_opengl.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_opengl_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_openglextensions.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_openglextensions_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_platformsupport_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_positioning.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_positioning_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_printsupport.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_printsupport_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_qml.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_qml_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_qmldevtools_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_qmltest.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_qmltest_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_quick.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_quick_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_quickparticles_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_quickwidgets.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_quickwidgets_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_script.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_script_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_scripttools.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_scripttools_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_sensors.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_sensors_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_serialport.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_serialport_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_sql.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_sql_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_svg.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_svg_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_testlib.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_testlib_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_uiplugin.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_uitools.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_uitools_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_webchannel.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_webchannel_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_webkit.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_webkit_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_webkitwidgets.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_webkitwidgets_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_websockets.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_websockets_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_widgets.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_widgets_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_winextras.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_winextras_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_xml.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_xml_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_xmlpatterns.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\modules\qt_lib_xmlpatterns_private.pri" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\qt_functions.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\qt_config.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\win32\qt_config.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\win32-g++\qmake.conf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\spec_post.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\exclusive_builds.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\default_pre.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\win32\default_pre.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\resolve_config.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\exclusive_builds_post.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\default_post.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\build_pass.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\qml_debug.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\win32\rtti.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\precompile_header.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\warn_on.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\qt.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\resources.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\moc.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\win32\opengl.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\uic.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\win32\windows.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\testcase_targets.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\exceptions.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\yacc.prf" "..\..\..\..\Program files\Qt\5.5\mingw492_32\mkspecs\features\lex.prf" ..\Hackaton_sandbox\Hackaton_sandbox.pro "D:/Program files/Qt/5.5/mingw492_32/lib/qtmain.prl" "D:/Program files/Qt/5.5/mingw492_32/lib/Qt5Widgets.prl" "D:/Program files/Qt/5.5/mingw492_32/lib/Qt5Gui.prl" "D:/Program files/Qt/5.5/mingw492_32/lib/Qt5Core.prl"  NO_PCH_SOURCES RESOURCES HEADERS SOURCES OBJECTIVE_SOURCES FORMS YACCSOURCES YACCSOURCES LEXSOURCES 
 
 clean: compiler_clean 
-	-$(DEL_FILE) release\main.o release\mainwindow.o release\moc_mainwindow.o
+	-$(DEL_FILE) release\main.o release\mainwindow.o release\isaksclass.o release\moc_mainwindow.o
 
 distclean: clean 
 	-$(DEL_FILE) $(DESTDIR_TARGET)
@@ -457,8 +461,167 @@ release/mainwindow.o: ../Hackaton_sandbox/mainwindow.cpp ../Hackaton_sandbox/mai
 		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qtouchdevice.h \
 		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
 		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qicon.h \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/QVariant \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/QAction \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qaction.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qactiongroup.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/QApplication \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qapplication.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qcoreapplication.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qeventloop.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qdesktopwidget.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qguiapplication.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qinputmethod.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/QButtonGroup \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qbuttongroup.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/QHeaderView \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qheaderview.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemview.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qframe.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qabstractitemmodel.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qitemselectionmodel.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qstyleoption.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qabstractspinbox.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qvalidator.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qregularexpression.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qslider.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qabstractslider.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qstyle.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qtabbar.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qrubberband.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/QMenu \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qmenu.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/QMenuBar \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qmenubar.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/QPushButton \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qpushbutton.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qabstractbutton.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/QStatusBar \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qstatusbar.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/QTextBrowser \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qtextbrowser.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qtextedit.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qtextdocument.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qtextoption.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qtextcursor.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qtextformat.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qpen.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/QToolBar \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qtoolbar.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o ..\Hackaton_sandbox\mainwindow.cpp
+
+release/isaksclass.o: ../Hackaton_sandbox/isaksclass.cpp ../Hackaton_sandbox/isaksclass.h \
+		../Hackaton_sandbox/mainwindow.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/QMainWindow \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qmainwindow.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qwidget.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qwindowdefs.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qglobal.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qconfig.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qfeatures.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qsystemdetection.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qprocessordetection.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qcompilerdetection.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qtypeinfo.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qtypetraits.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qsysinfo.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qlogging.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qflags.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qatomic.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qbasicatomic.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qatomic_bootstrap.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qgenericatomic.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qatomic_cxx11.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qatomic_gcc.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qatomic_msvc.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qatomic_armv7.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qatomic_armv6.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qatomic_armv5.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qatomic_ia64.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qatomic_mips.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qatomic_x86.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qatomic_unix.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qglobalstatic.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qmutex.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qnumeric.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qobjectdefs.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qnamespace.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qobjectdefs_impl.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qwindowdefs_win.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qobject.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qstring.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qchar.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qbytearray.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qrefcount.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qarraydata.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qstringbuilder.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qlist.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qalgorithms.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qiterator.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qbytearraylist.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qstringlist.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qregexp.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qstringmatcher.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qcoreevent.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qscopedpointer.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qmetatype.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qvarlengtharray.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qcontainerfwd.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qisenum.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qobject_impl.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qmargins.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qpaintdevice.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qrect.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qsize.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qpoint.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qpalette.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qcolor.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qrgb.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qbrush.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qpair.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qvector.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qmatrix.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qpolygon.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qregion.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qdatastream.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qiodevice.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qline.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qtransform.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qpainterpath.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qimage.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qpixelformat.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qpixmap.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qsharedpointer.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qshareddata.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qhash.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qsharedpointer_impl.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qfont.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qfontmetrics.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qfontinfo.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qsizepolicy.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qcursor.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qkeysequence.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qevent.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qvariant.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qmap.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qdebug.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qtextstream.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qlocale.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qset.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qcontiguouscache.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qurl.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qurlquery.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qfile.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qfiledevice.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qvector2d.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qtouchdevice.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
+		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qicon.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\isaksclass.o ..\Hackaton_sandbox\isaksclass.cpp
 
 release/moc_mainwindow.o: release/moc_mainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\moc_mainwindow.o release\moc_mainwindow.cpp

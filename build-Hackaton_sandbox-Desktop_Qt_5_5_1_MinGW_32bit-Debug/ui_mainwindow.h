@@ -19,6 +19,7 @@
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
 
@@ -32,6 +33,7 @@ public:
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
     QPushButton *pushButton_4;
+    QTextBrowser *textBrowser;
     QMenuBar *menuBar;
     QMenu *menuHackaton;
     QToolBar *mainToolBar;
@@ -41,7 +43,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(270, 422);
+        MainWindow->resize(556, 422);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         pushButton = new QPushButton(centralWidget);
@@ -53,13 +55,17 @@ public:
         pushButton_3 = new QPushButton(centralWidget);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
         pushButton_3->setGeometry(QRect(10, 180, 251, 81));
+        pushButton_3->setFlat(false);
         pushButton_4 = new QPushButton(centralWidget);
         pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
         pushButton_4->setGeometry(QRect(10, 270, 251, 81));
+        textBrowser = new QTextBrowser(centralWidget);
+        textBrowser->setObjectName(QStringLiteral("textBrowser"));
+        textBrowser->setGeometry(QRect(280, 10, 256, 341));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 270, 26));
+        menuBar->setGeometry(QRect(0, 0, 556, 26));
         menuHackaton = new QMenu(menuBar);
         menuHackaton->setObjectName(QStringLiteral("menuHackaton"));
         MainWindow->setMenuBar(menuBar);
@@ -73,6 +79,9 @@ public:
         menuBar->addAction(menuHackaton->menuAction());
 
         retranslateUi(MainWindow);
+
+        pushButton_3->setDefault(false);
+
 
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
