@@ -59,9 +59,6 @@ OBJECTS       = debug/main.o \
 
 DIST          =  ..\Hackaton_sandbox\mainwindow.h \
 		..\Hackaton_sandbox\palen.h \
-		..\Hackaton_sandbox\isaksclass.cpp \
-		..\Hackaton_sandbox\carlclass.cpp \
-		..\Hackaton_sandbox\mainwindow.h \
 		..\Hackaton_sandbox\isaksclass.h \
 		..\Hackaton_sandbox\carlclass.h ..\Hackaton_sandbox\main.cpp \
 		..\Hackaton_sandbox\mainwindow.cpp \
@@ -123,117 +120,9 @@ compiler_no_pch_compiler_make_all:
 compiler_no_pch_compiler_clean:
 compiler_rcc_make_all:
 compiler_rcc_clean:
-compiler_moc_header_make_all: debug/moc_mainwindow.cpp debug/moc_mainwindow.cpp
+compiler_moc_header_make_all: debug/moc_mainwindow.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) debug\moc_mainwindow.cpp debug\moc_mainwindow.cpp
-debug/moc_mainwindow.cpp: ../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/QMainWindow \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qmainwindow.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qwidget.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qwindowdefs.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qglobal.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qconfig.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qfeatures.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qsystemdetection.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qprocessordetection.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qcompilerdetection.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qtypeinfo.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qtypetraits.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qsysinfo.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qlogging.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qflags.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qatomic.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qbasicatomic.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qatomic_bootstrap.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qgenericatomic.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qatomic_cxx11.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qatomic_gcc.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qatomic_msvc.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qatomic_armv7.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qatomic_armv6.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qatomic_armv5.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qatomic_ia64.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qatomic_mips.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qatomic_x86.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qatomic_unix.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qglobalstatic.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qmutex.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qnumeric.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qobjectdefs.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qnamespace.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qobjectdefs_impl.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qwindowdefs_win.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qobject.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qstring.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qchar.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qbytearray.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qrefcount.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qarraydata.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qstringbuilder.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qlist.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qalgorithms.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qiterator.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qbytearraylist.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qstringlist.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qregexp.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qstringmatcher.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qcoreevent.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qscopedpointer.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qmetatype.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qvarlengtharray.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qcontainerfwd.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qisenum.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qobject_impl.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qmargins.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qpaintdevice.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qrect.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qsize.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qpoint.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qpalette.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qcolor.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qrgb.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qbrush.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qpair.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qvector.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qmatrix.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qpolygon.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qregion.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qdatastream.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qiodevice.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qline.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qtransform.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qpainterpath.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qimage.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qpixelformat.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qpixmap.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qsharedpointer.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qshareddata.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qhash.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qsharedpointer_impl.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qfont.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qfontmetrics.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qfontinfo.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qsizepolicy.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qcursor.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qkeysequence.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qevent.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qvariant.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qmap.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qdebug.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qtextstream.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qlocale.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qset.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qcontiguouscache.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qurl.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qurlquery.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qfile.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtCore/qfiledevice.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qvector2d.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qtouchdevice.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qtabwidget.h \
-		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtGui/qicon.h \
-		../Hackaton_sandbox/mainwindow.h
-	"D:\Program files\Qt\5.5\mingw492_32\bin\moc.exe" $(DEFINES) -D__GNUC__ -DWIN32 -I"D:/Program files/Qt/5.5/mingw492_32/mkspecs/win32-g++" -ID:/Documents/Git/PsHackaton/Hackaton_sandbox -I"D:/Program files/Qt/5.5/mingw492_32/include" -I"D:/Program files/Qt/5.5/mingw492_32/include/QtWidgets" -I"D:/Program files/Qt/5.5/mingw492_32/include/QtGui" -I"D:/Program files/Qt/5.5/mingw492_32/include/QtANGLE" -I"D:/Program files/Qt/5.5/mingw492_32/include/QtCore" -I. ..\Hackaton_sandbox\mainwindow.h -o debug\moc_mainwindow.cpp
-
+	-$(DEL_FILE) debug\moc_mainwindow.cpp
 debug/moc_mainwindow.cpp: ../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/QMainWindow \
 		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qmainwindow.h \
 		../../../../Program\ files/Qt/5.5/mingw492_32/include/QtWidgets/qwidget.h \

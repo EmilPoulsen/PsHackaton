@@ -21,10 +21,6 @@ SOURCES += main.cpp\
 
 HEADERS  += mainwindow.h \
     palen.h \
-    isaksclass.cpp \
-    carlclass.cpp
-
-HEADERS  += mainwindow.h \
     isaksclass.h \
     carlclass.h
 
