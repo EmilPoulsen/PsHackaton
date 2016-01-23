@@ -7,9 +7,11 @@
 class IsaksClass
 {
     int a;
-    std::string text;
+    QString text;
 public:
     IsaksClass();
+    QString Text();
+    int Number();
 };
 
 #endif // ISAKSCLASS_H
